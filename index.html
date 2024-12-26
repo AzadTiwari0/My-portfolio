@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azad Tiwari's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.google.com/specimen/Pangolin?categoryFilters=Calligraphy:%2FScript%2FInformal');
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #121212;
+        }
+        .btn-custom {
+            background-color: #1e90ff;
+            color: #fff;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #00bfff;
+        }
+        .dynamic-bg {
+            height: 50vh;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: moveBg 10s linear infinite;
+        }
+        @keyframes moveBg {
+            0% {background-position: 0% 0%;}
+            100% {background-position: 100% 100%;}
+        }
+        .skills-badges span {
+            margin: 5px;
+            padding: 8px 12px;
+            background-color: #343a40;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .contact-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+        .contact-icons a:hover {
+            color: #1e90ff;
+        }
+        /* Glass effect for project cards */
+        .glass {
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+            backdrop-filter: blur(10px); /* Blurring the background */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .glass:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card h4 {
+            font-size: 1.5rem;
+        }
+
+        .project-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card h4 {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <h3> <b>AZAD TIWARI</b> </h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Page -->
+    <section id="welcome" class="text-center dynamic-bg">
+        <div>
+            <h1>Welcome to Azad Tiwari's Portfolio</h1>
+            <p>Hi, I'm Azad Tiwari — a passionate Frontend Developer, Graphic Designer, and Software Tester. I create innovative and user-friendly digital experiences.</p>
+            <div>
+                <a href="#projects" class="btn btn-custom me-2">Explore My Work</a>
+                <a href="#contact" class="btn btn-custom">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tagline Section -->
+    <section class="text-center py-5">
+        <h2>Building engaging digital experiences with a blend of technology and creativity.</h2>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="text-center py-5">
+        <h3>SKILLS</h3>
+        <div class="skills-badges d-inline-flex flex-wrap justify-content-center">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>Node.js</span>
+            <span>Graphic Design</span>
+            <span>Software Testing</span>
+            <span>Figma</span>
+            <span>Canva</span>
+            <span>My SQL
+            </span>
+            <span>Wix</span>
+            <span>Website Design</span>
+            <span>UI/UX Design</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">PROJECTS</h2>
+            <div class="row">
+                <!-- PictureTube Project -->
+                <div class="col-md-4">
+                    <div class="project-card text-center glass">
+                        <h4>PictureTube</h4>
+                        <p>A responsive image search website built using HTML, CSS, and JavaScript.</p>
+                        <a href="https://picturetube.vercel.app/" class="btn btn-custom">View Project</a>
+                    </div>
+                </div>
+                <!-- Snake Game Project -->
+                <div class="col-md-4">
+                    <div class="project-card text-center glass">
+                        <h4>Snake Game</h4>
+                        <p>A neon-themed interactive snake game with responsive design and engaging gameplay.</p>
+                        <a href="https://neonsnakegame.netlify.app/" class="btn btn-custom">Play Game</a>
+                    </div>
+                </div>
+                <!-- RailSaathi Project -->
+                <div class="col-md-4">
+                    <div class="project-card text-center glass">
+                        <h4>RailSaathi</h4>
+                        <p>A web-based ticket management system with AI-based seat and route suggestions.</p>
+                        <a href="#" class="btn btn-custom">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4"> MY SERVICES</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card text-center glass">
+                        <h4>Interactive and Responsive Frontend Website</h4>
+                        <p>Developing websites that are responsive, fast, and interactive for an enhanced user experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card text-center glass">
+                        <h4>UI/UX Design</h4>
+                        <p>Creating user-friendly and aesthetically pleasing interfaces with great usability.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card text-center glass">
+                        <h4>Software Testing</h4>
+                        <p>Ensuring high-quality software through thorough testing and debugging processes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card text-center glass">
+                        <h4>AI Model Testing</h4>
+                        <p>Testing AI models to ensure they perform optimally and deliver accurate results.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card text-center glass">
+                        <h4>All Types of Graphic Design</h4>
+                        <p>Creating visually appealing graphics for digital and print media.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card text-center glass">
+                        <h4>Content Writing</h4>
+                        <p>Crafting engaging and high-quality content for websites, blogs, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Let's Connect</h2>
+            <form class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit</button>
+            </form>
+
+            <div class="text-center mt-4">
+                <p>Email: <a href="mailto:tiwariazad03@gmail.com" class="text-decoration-none">tiwariazad03@gmail.com</a></p>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/azad-tiwari" target="_blank">
+                        <img alt="LinkedIn" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNDggNDgiIHdpZHRoPSI0OHB4IiBoZWlnaHQ9IjQ4cHgiPjxwYXRoIGQ9Ik0gMTEuNSA2IEMgOC40ODAyMjU5IDYgNiA4LjQ4MDIyNTkgNiAxMS41IEwgNiAzNi41IEMgNiAzOS41MTk3NzQgOC40ODAyMjU5IDQyIDExLjUgNDIgTCAzNi41IDQyIEMgMzkuNTE5Nzc0IDQyIDQyIDM5LjUxOTc3NCA0MiAzNi41IEwgNDIgMTEuNSBDIDQyIDguNDgwMjI1OSAzOS41MTk3NzQgNiAzNi41IDYgTCAxMS41IDYgeiBNIDExLjUgOSBMIDM2LjUgOSBDIDM3Ljg5ODIyNiA5IDM5IDEwLjEwMTc3NCAzOSAxMS41IEwgMzkgMzYuNSBDIDM5IDM3Ljg5ODIyNiAzNy44OTgyMjYgMzkgMzYuNSAzOSBMIDExLjUgMzkgQyAxMC4xMDE3NzQgMzkgOSAzNy44OTgyMjYgOSAzNi41IEwgOSAxMS41IEMgOSAxMC4xMDE3NzQgMTAuMTAxNzc0IDkgMTEuNSA5IHogTSAxNS41IDEzIEEgMi41IDIuNSAwIDAgMCAxNS41IDE4IEEgMi41IDIuNSAwIDAgMCAxNS41IDEzIHogTSAxNCAyMCBDIDEzLjQ0NyAyMCAxMyAyMC40NDcgMTMgMjEgTCAxMyAzNCBDIDEzIDM0LjU1MyAxMy40NDcgMzUgMTQgMzUgTCAxNyAzNSBDIDE3LjU1MyAzNSAxOCAzNC41NTMgMTggMzQgTCAxOCAyMSBDIDE4IDIwLjQ0NyAxNy41NTMgMjAgMTcgMjAgTCAxNCAyMCB6IE0gMjEgMjAgQyAyMC40NDcgMjAgMjAgMjAuNDQ3IDIwIDIxIEwgMjAgMzQgQyAyMCAzNC41NTMgMjAuNDQ3IDM1IDIxIDM1IEwgMjQgMzUgQyAyNC41NTMgMzUgMjUgMzQuNTUzIDI1IDM0IEwgMjUgMjYuNSBDIDI1IDI1LjEyMSAyNi4xMjEgMjQgMjcuNSAyNCBDIDI4Ljg3OSAyNCAzMCAyNS4xMjEgMzAgMjYuNSBMIDMwIDM0IEMgMzAgMzQuNTUzIDMwLjQ0NyAzNSAzMSAzNSBMIDM0IDM1IEMgMzQuNTUzIDM1IDM1IDM0LjU1MyAzNSAzNCBMIDM1IDI2IEMgMzUgMjIuNjkxIDMyLjMwOSAyMCAyOSAyMCBDIDI3LjQ2MiAyMCAyNi4wNjMgMjAuNTg2MDE2IDI1IDIxLjU0MTAxNiBMIDI1IDIxIEMgMjUgMjAuNDQ3IDI0LjU1MyAyMCAyNCAyMCBMIDIxIDIwIHoiLz48L3N2Zz4=">
+                    </a>
+                    <a href="https://github.com/AzadTiwari0" target="_blank">
+                        <img alt="GitHub" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OHB4IiBoZWlnaHQ9IjQ4cHgiPjxwYXRoIGQ9Ik0gMTEuNSA2IEMgOC40ODAyMjU5IDYgNiA4LjQ4MDIyNTkgNiAxMS41IEwgNiAzNi41IEMgNiAzOS41MTk3NzQgOC40ODAyMjU5IDQyIDExLjUgNDIgTCAzNi41IDQyIEMgMzkuNTE5Nzc0IDQyIDQyIDM5LjUxOTc3NCA0MiAzNi41IEwgNDIgMTEuNSBDIDQyIDguNDgwMjI1OSAzOS41MTk3NzQgNiAzNi41IDYgTCAxMS41IDYgeiBNIDExLjUgOSBMIDM2LjUgOSBDIDM3Ljg5ODIyNiA5IDM5IDEwLjEwMTc3NCAzOSAxMS41IEwgMzkgMzYuNSBDIDM5IDM3Ljg5ODIyNiAzNy44OTgyMjYgMzkgMzYuNSAzOSBMIDExLjUgMzkgQyAxMC4xMDE3NzQgMzkgOSAzNy44OTgyMjYgOSAzNi41IEwgOSAxMS41IEMgOSAxMC4xMDE3NzQgMTAuMTAxNzc0IDkgMTEuNSA5IHogTSAxNS41IDEzIEEgMi41IDIuNSAwIDAgMCAxNS41IDE4IEEgMi41IDIuNSAwIDAgMCAxNS41IDEzIHogTSAxNCAyMCBDIDEzLjQ0NyAyMCAxMyAyMC40NDcgMTMgMjEgTCAxMyAzNCBDIDEzIDM0LjU1MyAxMy40NDcgMzUgMTQgMzUgTCAxNyAzNSBDIDE3LjU1MyAzNSAxOCAzNC41NTMgMTggMzQgTCAxOCAyMSBDIDE4IDIwLjQ0NyAxNy41NTMgMjAgMTcgMjAgTCAxNCAyMCB6IE0gMjEgMjAgQyAyMC40NDcgMjAgMjAgMjAuNDQ3IDIwIDIxIEwgMjAgMzQgQyAyMCAzNC41NTMgMjAuNDQ3IDM1IDIxIDM1IEwgMjQgMzUgQyAyNC41NTMgMzUgMjUgMzQuNTUzIDI1IDM0IEwgMjUgMjYuNSBDIDI1IDI1LjEyMSAyNi4xMjEgMjQgMjcuNSAyNCBDIDI4Ljg3OSAyNCAzMCAyNS4xMjEgMzAgMjYuNSBMIDMwIDM0IEMgMzAgMzQuNTUzIDMwLjQ0NyAzNSAzMSAzNSBMIDM0IDM1IEMgMzQuNTUzIDM1IDM1IDM0LjU1MyAzNSAzNCBMIDM1IDI2IEMgMzUgMjIuNjkxIDMyLjMwOSAyMCAyOSAyMCBDIDI3LjQ2MiAyMCAyNi4wNjMgMjAuNTg2MDE2IDI1IDIxLjU0MTAxNiBMIDI1IDIxIEMgMjUgMjAuNDQ3IDI0LjU1MyAyMCAyNCAyMCBMIDIxIDIwIHoiLz48L3N2Zz4=">
+                    </a>
+                    <a href="#" class="bi bi-twitter"></a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
